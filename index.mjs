@@ -1,6 +1,10 @@
-import express from "express";
+import express, { json } from "express";
 import Todos from "./todos.mjs";
 import { expressjwt as jwt } from "express-jwt";
+import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const port = 3005;
